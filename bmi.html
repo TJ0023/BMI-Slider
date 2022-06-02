@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Slider</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator (Metric)</h1>
+        <div class="display">
+            <p id="result">20.0</p>
+            <p id="category">Normal weight</p>
+         </div>
+
+         <h5 style="text-align: center; margin-bottom: 15px;">KG and CM </h5>
+         <div class="row">
+            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+            <span id="weight-val">20 kg</span>
+         </div>
+         
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+             <span id="height-val">100 cm</span>
+          </div>
+
+
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+
+        <h1>BMI Calculator (US)</h1>
+        <div class="display">
+            <p id="result2">21.7</p>
+            <p id="category2">Normal weight</p>
+         </div>
+
+        <h5 style="text-align: center; margin-bottom: 15px;">Lbs and Inches</h5>
+          
+        <div class="row">
+          <input type="range" min="40" max="500" value="40" id="weightLbs" oninput="calculate2()">
+          <span id="weightLbs-val">40 lbs</span>
+       </div>
+       
+      <div class="row">
+          <input type="range" min="36" max="96" value="36" id="heightInch" oninput="calculate2()">
+           <span id="heightInch-val">36 inches</span>
+        </div>
+    </div>
+
+    <script src="js/bmi.js"></script>
+</body>
+</html>
