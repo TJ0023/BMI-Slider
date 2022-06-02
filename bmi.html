@@ -19,7 +19,7 @@
          <div class="row">
             <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)" >
             <span id="weight-val">20 kg</span>
-            <p> <span id="outputKilograms">44.019</span> Pounds</p>
+            <p> <span id="outputPounds">44.019</span> Pounds</p>
          </div>
          
         <div class="row">
@@ -45,13 +45,15 @@
         <h5 style="text-align: center; margin-bottom: 15px;">Lbs and Inches</h5>
           
         <div class="row">
-          <input type="range" min="40" max="500" value="40" id="weightLbs" oninput="calculate2()">
+          <input type="range" min="40" max="500" value="40" id="weightLbs" oninput="calculate2()" oninput="weightConverter2(this.value)" onchange="weightConverter2(this.value)">
           <span id="weightLbs-val">40 lb</span>
+          <p> <span id="outputKilograms">18.14</span> Kilograms</p>
        </div>
        
       <div class="row">
-          <input type="range" min="36" max="96" value="36" id="heightInch" oninput="calculate2()">
+          <input type="range" min="36" max="96" value="36" id="heightInch" oninput="calculate2()" oninput="heightConverter2(this.value)" onchange="heightConverter2(this.value)">
            <span id="heightInch-val">36 inches</span>
+           <p><span id="outputCentimeters">91.44</span> Centimeters</p>
         </div>
     </div>
 

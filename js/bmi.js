@@ -1,11 +1,20 @@
 function weightConverter(valNum) {
-    document.getElementById("outputKilograms").innerHTML=((valNum * 2.2046).toFixed(2));
+    document.getElementById("outputPounds").innerHTML=((valNum * 2.2046).toFixed(2));
   }
+
+  function weightConverter2(valNum) {
+    document.getElementById("outputKilograms").innerHTML=((valNum / 2.2046).toFixed(2));
+  }
+
 
   function heightConverter(valNum) {
     document.getElementById("outputMeters").innerHTML=((valNum / 100).toFixed(2));
   }
 
+  function heightConverter2(valNum) {
+    document.getElementById("outputCentimeters").innerHTML=((valNum * 2.54).toFixed(2));
+  }
+  
 function calculate(){
       let bmi;
       let result = document.getElementById("result");
