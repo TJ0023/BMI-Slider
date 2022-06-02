@@ -73,11 +73,15 @@ body{
 }
 
   .row{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+ .row p {
+     text-align: right;
+    margin: 15px 30px 15px 15px;
+ }
 .row span{
     font-weight: 500;
 }

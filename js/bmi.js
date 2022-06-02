@@ -1,3 +1,7 @@
+function weightConverter(valNum) {
+    document.getElementById("outputKilograms").innerHTML=((valNum * 2.2046).toFixed(2));
+  }
+
 function calculate(){
       let bmi;
       let result = document.getElementById("result");
