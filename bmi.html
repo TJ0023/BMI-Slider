@@ -23,8 +23,10 @@
          </div>
          
         <div class="row">
-            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()" oninput="heightConverter(this.value)" onchange="heightConverter(this.value)">
              <span id="height-val">100 cm</span>
+
+             <p>Meters: <span id="outputMeters"></span></p>
           </div>
 
 
